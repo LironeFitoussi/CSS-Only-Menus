@@ -17,11 +17,9 @@ body {
     background-color: aliceblue
 }
 
-.fa-solid {
+.fa-solid, .fa-bars {
     margin: 5%;
-    display: none;
-    width: fit-content;
-    height: fit-content;
+    display: none!important;
 }
 
 .header-nav {
@@ -47,10 +45,13 @@ body {
     color: aliceblue;
     background-color: #226799;
  }
+
 @media screen and (max-width: 425px){
     
     .fa-solid {
-        display: flex;
+        display: flex!important;
+        width: fit-content;
+        height: fit-content;
         transition: transform 0.1s;
     }
 
