@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 60vw;
+    height: 30vh;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #226799;
+}
+
+.nav-btn {
+    display: flex;
+    text-decoration: none;
+}
+
+.fa-solid {
+    display: none;
+    width: 100%;
+    width: fit-content;
+}
+
+.header-nav {
+    display: flex;
+}
+
+@media screen and (max-width: 425px){
+    .fa-solid {
+        display: flex;
+        transition: transform 0.1s;
+    }
+
+    .nav-btn:focus ~ .header-nav {
+        display: flex;
+    }
+
+    .nav-btn:focus > .fa-solid{
+        transform: rotateZ(90deg);
+    }
+
+    .header-nav {
+        display: none;
+        flex-direction: column;
+    }
+}
