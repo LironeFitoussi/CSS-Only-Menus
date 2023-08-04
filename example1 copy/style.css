@@ -12,7 +12,6 @@ body {
 
 /* Navigation Menu */
 .nav-btn {
-    position: relative;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -59,54 +58,29 @@ body {
     /* Navigation Menu - Mobile*/
     .fa-solid {
         display: flex!important;
-        position: absolute;
         width: fit-content;
         height: fit-content;
-        margin: 12%;
         transition: transform 0.1s;
     }
 
     .nav-btn {
         background-color: #226799;
-        width: fit-content;
+        width: 8vw;
         height: fit-content;
-        padding: 0;
+        padding: 2%;
     }
-
-    #btnControl:checked + label ~ .header-nav {
+    .nav-btn:hover > .header-nav {
         display: flex;
-        width: 60vh;
     }
 
-    #btnControl:checked + label > i.fa-solid{
-        animation: rotateSign 0.1s forwards;
-    }
-    #btnControl:checked + label {
-    transform: translate(-27vw, 2px);
+    .nav-btn:hover > i.fa-solid{
+        transform: rotateZ(90deg);
     }
 
-    @keyframes rotateSign {
-        from {transform: rotateZ(0deg);}
-        to {transform: rotateZ(90deg);}
-    }
-
-    input {
-        visibility: hidden;
-    }
-    
-    label {
-        display: flex;
-        transform: translate(-7px, 2px);
-    }
-
-    .btn {
-        top: 0;
-        position: absolute;
-    }
-
-    #btnControl:checked + label{
+    .nav-btn:hover{
         padding: 0;
         align-items:flex-start;
+        width: 60vw;
     }
 
     .header-nav {
