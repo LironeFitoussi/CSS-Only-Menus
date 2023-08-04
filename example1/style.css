@@ -4,7 +4,7 @@ body {
     align-items: center;
 }
 
-section {
+.navbar-element {
     width: 60vw;
     height: fit-content;
     border-radius: 10px;
@@ -28,9 +28,13 @@ section {
 
 .header-nav {
     display: flex;
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 8px 8px ;
 }
 
+.header-nav > a {
+    color: #226799;
+    text-decoration: none;
+ }
 @media screen and (max-width: 425px){
     .fa-solid {
         display: flex;
@@ -48,8 +52,16 @@ section {
     .header-nav {
         display: none;
         flex-direction: column;
-        width: 90%;
-        padding: 5%;
+        width: 100%;
         background-color: aliceblue;
+    }
+
+    .header-nav > a {
+        padding: 0 5%;
+    }
+
+    .header-nav > a:hover {
+        color: aliceblue;
+        background-color: #226799;
     }
 }
