@@ -4,19 +4,17 @@ body {
     align-items: center;
 }
 
-.navbar-element {
-    width: 60vw;
-    height: fit-content;
-    border-radius: 10px;
-    background-color: #226799;
-}
-
 .nav-btn {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    height: fit-content;
-    width: 100%;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+    width: 50vw;
+    border-radius: 2vw;
+    padding: 0 5%;
+    background-color: aliceblue
 }
 
 .fa-solid {
@@ -28,25 +26,52 @@ body {
 
 .header-nav {
     display: flex;
-    border-radius: 0 0 8px 8px ;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    border-radius: 0 0 2vw 2vw;
 }
 
 .header-nav > a {
+    display: flex;
+    height: 100%;
+    padding: 0 5%;
+    align-items: center;
     color: #226799;
     text-decoration: none;
  }
+
+ .header-nav > a:hover {
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #226799;
+ }
 @media screen and (max-width: 425px){
+    
     .fa-solid {
         display: flex;
         transition: transform 0.1s;
     }
 
+    .nav-btn {
+        background-color: #226799;
+        width: 8vw;
+        height: fit-content;
+        padding: 2%;
+    }
     .nav-btn:hover > .header-nav {
         display: flex;
     }
 
     .nav-btn:hover > i.fa-solid{
         transform: rotateZ(90deg);
+    }
+
+    .nav-btn:hover{
+        padding: 0;
+        align-items:flex-start;
+        width: 60vw;
     }
 
     .header-nav {
@@ -58,6 +83,8 @@ body {
 
     .header-nav > a {
         padding: 0 5%;
+        width: 90%;
+        align-items: center;
     }
 
     .header-nav > a:hover {
