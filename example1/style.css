@@ -4,6 +4,8 @@ body {
     align-items: center;
 }
 
+
+/* Navigation Menu */
 .nav-btn {
     display: flex;
     flex-direction: column;
@@ -48,6 +50,7 @@ body {
 
 @media screen and (max-width: 425px){
     
+    /* Navigation Menu - Mobile*/
     .fa-solid {
         display: flex!important;
         width: fit-content;
